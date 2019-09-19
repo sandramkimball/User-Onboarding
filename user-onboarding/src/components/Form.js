@@ -15,15 +15,18 @@ const UserForm = ({errors, touched, values, status}) => {
     return(
         <div className='user-form'>
             <Form>
-
-               Username: <Field type='text' name='username' placeholder='Username' />
-               {touched.username && errors.username && (<p className='error'>{errors.username}</p>)}
-
-               Email: <Field type='text' name='email' placeholder='Email'/>
-               {touched.email && errors.email && (<p className='error'>{errors.email}</p>)}
-
-               Password: <Field type='password' name='userPassword' placeholder='Password'/>
-               {touched.password && errors.password && (<p className='error'>{errors.password}</p>)}
+                <div className='input-field'>
+                    Username: <Field type='text' name='username' />
+                    {touched.username && errors.username && (<p className='error'>{errors.username}</p>)}
+               </div>
+               <div className='input-field'>
+                    Email: <Field type='text' name='email'/>
+                    {touched.email && errors.email && (<p className='error'>{errors.email}</p>)}
+               </div>
+               <div className='input-field'>
+                    Password: <Field type='password' name='userPassword' />
+                    {touched.password && errors.password && (<p className='error'>{errors.password}</p>)}
+               </div>
                
                <label className='terms-checkbox'>
                 <Field type='checkbox' name='terms' checked={values.terms}/>
