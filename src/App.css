@@ -1,0 +1,10 @@
+.app-header{
+    background: #350463;
+    display: flex;
+}
+
+.app-header h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
