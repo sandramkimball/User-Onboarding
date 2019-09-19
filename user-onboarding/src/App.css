@@ -1,16 +1,18 @@
 .App {
-  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1505904645664-def2335fb0d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1077&q=80');
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .App-header {
-  background-image: url('https://images.unsplash.com/photo-1505904645664-def2335fb0d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1077&q=80');
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: 000;
+  color: #000;
 }
 
 /* .bgImg{
@@ -21,20 +23,24 @@
   position: fixed;
 } */
 
-body button{
-  background: #000;
-  color: #ffdc9b;
+button{
+  background: #350463;
+  color: #000;
   font-weight: 600;
   font-size: 16px;
   padding: 10px 15px;
   border: none;
-  max-width: 30%;
   margin-top: 20px;
   justify-content: center;
 }
 
+button:hover{
+  transform: scale(1.1);
+}
+
+
 .user-form{
-  background: #fff;
+  background: #000;
   margin: 50px;
   width: 350px;
   height: 400px;
@@ -46,15 +52,15 @@ Form{
   flex-direction: column;
   align-items: space-evenly;
   width: 80%;
-  color: #350463;
+  color: #fff;
   text-align: left;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .checkmark{
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 Form .Field{
